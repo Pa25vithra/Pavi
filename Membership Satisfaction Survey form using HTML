@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Satisfaction Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .form-group input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    .form-group .options label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+    .form-group button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Membership Satisfaction Survey</h1>
+    <form action="#" method="post">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name:*</label>
+        <input type="text" id="name" name="name" placeholder="First and Last Name" required>
+      </div>
+      
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address:*</label>
+        <input type="text" id="address" name="address" placeholder="Street Address" required>
+        <input type="text" id="city" name="city" placeholder="City" required>
+        <input type="text" id="region" name="region" placeholder="Region" required>
+        <input type="text" id="postal" name="postal" placeholder="Postal/Zip Code" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone:*</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+      </div>
+
+      <!-- Account Number -->
+      <div class="form-group">
+        <label for="account">Account Number:*</label>
+        <input type="text" id="account" name="account" placeholder="Located on your billing statement" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address:*</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      </div>
+
+      <!-- Membership Duration -->
+      <div class="form-group">
+        <label>1). How long have you been a member of X company?*</label>
+        <div class="options">
+          <label><input type="radio" name="membership-duration" value="Less than a year" required> Less than a year</label>
+          <label><input type="radio" name="membership-duration" value="1-5 years"> 1-5 years</label>
+          <label><input type="radio" name="membership-duration" value="6-10 years"> 6-10 years</label>
+          <label><input type="radio" name="membership-duration" value="11-19 years"> 11-19 years</label>
+          <label><input type="radio" name="membership-duration" value="20+ years"> 20+ years</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit Survey</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
