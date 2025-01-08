@@ -1,0 +1,15 @@
+function multiplyNumbers(a, b) {
+    return a * b;
+}
+function divideNumbers(a, b) {
+    if (b === 0) {
+        return "Error: Division by zero is not allowed.";
+    }
+    return a / b;
+}
+let num1 = 10; 
+let num2 = 5;  
+let multiplicationResult = multiplyNumbers(num1, num2);
+let divisionResult = divideNumbers(num1, num2);
+console.log(`The multiplication of ${num1} and ${num2} is: ${multiplicationResult}`);
+console.log(`The division of ${num1} by ${num2} is: ${divisionResult}`);
